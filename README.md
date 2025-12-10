@@ -1,2 +1,4 @@
 # raevntech-site
-Landing site for RaevnTech — the platform where intelligence takes flight.
+We build modern systems that make everyday work simpler, smarter, and more connected.
+New experiences are coming soon.
+
