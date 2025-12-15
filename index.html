@@ -11,6 +11,7 @@
       color: white;
       text-align: center;
       padding: 2rem;
+      margin: 0;
     }
     .glyph {
       font-size: 3rem;
@@ -23,11 +24,12 @@
       font-size: 2rem;
       font-weight: normal;
       color: #888;
+      margin: 0.5rem 0 0;
     }
     h2 {
       font-size: 1.2rem;
       color: #bbb;
-      margin-bottom: 2rem;
+      margin: 0.75rem 0 2rem;
     }
     nav {
       margin-top: 2rem;
@@ -37,6 +39,8 @@
       color: #a1cdfc;
       text-decoration: none;
       font-weight: bold;
+      display: inline-block;
+      padding: 0.25rem 0;
     }
     nav a:hover {
       text-decoration: underline;
@@ -45,9 +49,43 @@
       margin-top: 2.5rem;
       font-size: 1.1rem;
       color: #ccc;
-      max-width: 600px;
+      max-width: 720px;
       margin-left: auto;
       margin-right: auto;
+      line-height: 1.55;
+    }
+    .section {
+      max-width: 720px;
+      margin: 3rem auto 0;
+      text-align: left;
+      color: #ddd;
+      line-height: 1.6;
+    }
+    .section h3 {
+      color: #a1cdfc;
+      margin: 0 0 0.5rem;
+      font-size: 1.1rem;
+      letter-spacing: 0.02rem;
+    }
+    .section p {
+      margin: 0 0 0.75rem;
+    }
+    .section a {
+      color: #a1cdfc;
+    }
+    .build {
+      opacity: .65;
+      font-size: .9rem;
+      margin-top: 1.5rem;
+    }
+    footer {
+      opacity: .6;
+      margin-top: 3rem;
+      font-size: .9rem;
+    }
+    /* Smooth scroll for anchor links */
+    html {
+      scroll-behavior: smooth;
     }
   </style>
 </head>
@@ -57,22 +95,51 @@
   <h2>Early Preview / Stealth Mode</h2>
 
   <nav>
-    <a href="#">About</a>
-    <a href="#">Products</a>
-    <a href="#">Contact</a>
-    <a href="#">Join Waitlist</a>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+    <a href="#waitlist">Join Waitlist</a>
   </nav>
 
   <p class="tagline">
-    We build the intelligence layer for a smarter world. From photos to actions, from AI to real-world results — Raevntech creates tools where vision meets execution.
+    We build the intelligence layer for a smarter world. From photos to actions, from AI to real-world results —
+    Raevntech creates tools where vision meets execution.
   </p>
+
+  <p class="build">
+    Build: v0.0.3 — pipeline verified
+  </p>
+
+  <section id="about" class="section">
+    <h3>About</h3>
+    <p>
+      Raevntech is building a visual intelligence workspace that helps people capture real-world moments and turn them into action.
+      Our core loop is <strong>Spot → Scan → Solve</strong>.
+    </p>
+  </section>
+
+  <section id="products" class="section">
+    <h3>Products</h3>
+    <p><strong>PRRCH</strong> — Photo Recognition, Repair &amp; Care Hub.</p>
+    <p><strong>PicBid</strong> — Get local quotes and route work to the right pros.</p>
+  </section>
+
+  <section id="contact" class="section">
+    <h3>Contact</h3>
+    <p>
+      Email: <a href="mailto:reavn.lens@gmail.com">reavn.lens@gmail.com</a>
+    </p>
+  </section>
+
+  <section id="waitlist" class="section">
+    <h3>Join Waitlist</h3>
+    <p>
+      Coming soon. (Next step: we’ll wire this to a simple form.)
+    </p>
+  </section>
+
+  <footer>
+    © Raevntech LLC • Spot → Scan → Solve
+  </footer>
 </body>
 </html>
-<p class="tagline">
-  ...vision meets execution.
-</p>
-
-<p style="opacity:.65;font-size:.9rem;margin-top:1.5rem">
-  Build: v0.0.3 — pipeline verified
-
-</p>
